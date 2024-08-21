@@ -24,7 +24,7 @@ function About() {
             data-aos-duration="700"
             className="font-bold text-white text-[32px] leading-[40px] sm:text-[64px] sm:leading-[78px] text-center"
           >
-            Hey! I'm Shokhruz Abdugaffarov
+            Hey! I'm Shokhruz
           </h2>
           <p
             data-aos="fade-up"
