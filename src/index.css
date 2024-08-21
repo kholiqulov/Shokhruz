@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth !important; 
+}
+
+body {
+  margin: 0;
+  font-family: "Montserrat", "sans-serif";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('./Assets/Fonts/montserrat-v25-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./Assets/Fonts/montserrat-v25-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 500;
+  src: local(''),
+       url('./Assets/Fonts/montserrat-v25-latin-500italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./Assets/Fonts/montserrat-v25-latin-500italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 600;
+  src: local(''),
+       url('./Assets/Fonts/montserrat-v25-latin-600italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./Assets/Fonts/montserrat-v25-latin-600italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700italic - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: italic;
+  font-weight: 700;
+  src: local(''),
+       url('./Assets/Fonts/montserrat-v25-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('./Assets/Fonts/montserrat-v25-latin-700italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* --- Scrol Styles --- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0071E3; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #00468b; 
+}
+
+/* ------ Header_hide ------ */
+
+.nav-hidden {
+  transform: translateY(calc(-1 * 72px));
+}
+
+.container {
+  max-width: 1220px;
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* ------ Nav_Hover ------ */
+
+.nav_link{
+  position: relative; 
+  padding: 8px 0;
+}
+
+.nav_link::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0.5px;
+  background-color: #0071E3;
+  left: 50%;
+  bottom: 0;
+  transition: all .3s ease;
+}
+
+.nav_link::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0.5px;
+  background-color: #0071E3;
+  right: 50%;
+  bottom: 0;
+  transition: all .3s ease;
+}
+
+.nav_item:hover > .nav_link::before{
+  width: 50%;
+}
+
+.nav_item:hover > .nav_link::after{
+  width: 50%;
+}
+
+.nav_item:hover .dropdown { 
+  display: block;
+}
+
+.item:hover > a {
+  color: #0071E3;
+}y
+
+.footer {
+  background-image: linear-gradient(85.98deg, #0071E3 0%, rgba(0, 113, 227, 0.5) 100%);
+}
