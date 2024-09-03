@@ -12,11 +12,6 @@ import Access from "../../Assets/Images/svg/access.svg";
 import Food from "../../Assets/Images/svg/ovqat.svg";
 import Kiy from "../../Assets/Images/svg/kiyim.svg";
 
-// ------> Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
 function Skills() {
   // ------> Use aos animation library
   useEffect(() => {
